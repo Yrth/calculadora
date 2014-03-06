@@ -22,7 +22,7 @@
            $res=(int)$val1^(int)$val2;
            break;
    }
-   $string=preg_replace('/<div id=\"myid\">.*<\/div>/',"<br>"+result,file_get_contents('vista.html'));
+   $string=preg_replace('/<div id=\"myid\">.*<\/div>/',"<br>"+$res,file_get_contents('vista.html'));
 
    
    echo $string;
