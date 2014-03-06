@@ -7,19 +7,19 @@
 
    switch ($operador) {
        case "+":
-           $res=(int)val1+(int)val2;
+           $res=(int)$val1+(int)$val2;
            break;
        case "-":
-           $res=(int)val1-(int)val2;
+           $res=(int)$val1-(int)$val2;
            break;
        case "*":
-           $res=(int)val1*(int)val2;
+           $res=(int)$val1*(int)$val2;
            break;
        case "/":
-           $res=(int)val1/(int)val2;
+           $res=(int)$val1/(int)$val2;
            break;
        case "^":
-           $res=(int)val1^(int)val2;
+           $res=(int)$val1^(int)$val2;
            break;
    }
    $string=preg_replace('/<div id=\"myid\">.*<\/div>/',"<br>"+result,file_get_contents('vista.html'));
